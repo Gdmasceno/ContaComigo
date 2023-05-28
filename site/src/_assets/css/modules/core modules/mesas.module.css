@@ -1,0 +1,267 @@
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.msg{
+    font-size: 20px;
+    color: #888888;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main_head{
+    font-size: 16px;
+    color: #888888;
+    font-weight: bold;
+    width: 100%;
+}
+
+.main_head p{
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #888888;
+}
+
+
+.container{
+    background-color: white;
+    border-radius: 16px;
+    width: 800px;
+    padding: 70px 0px 50px 80px;
+    margin-top: 20px;
+    z-index: 0;
+}
+
+.container_head{
+    font-size: 25px;
+    font-weight: bold;
+    width: 100px;
+}
+
+.container_head .desc{
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 5px;
+    z-index:auto;
+}
+
+.container_head .passagem .line{
+    width: 82px;
+    height: 5px;
+    background-color: var(--paletaNum1);
+    position: absolute;
+    z-index: -1;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+
+
+.pessoas{
+    padding: 0px 20px 20px 5px;
+    width: 710px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 240px;
+    overflow: auto;
+    margin-top: 30px;
+
+}
+.buttons{
+    width: 550px;
+    float: right;
+}
+
+
+.buttons button{
+    width: 220px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.buttons .btnSingular{
+    width: 220px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--secundary-color);
+    border: none;
+    background-color: white;
+    border: 2px solid var(--secundary-color);
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.container .container_right{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 500px;
+}
+
+.container_right .total{
+    color: var(--paletaNum1);
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.container_right .valor{
+    color: var(--secundary-color);
+}
+
+.container_right .add_cliente{
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+.container_right img {
+    margin-top: 3px;
+    width: 13px;
+    height: 13px;
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .container {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .buttons {
+        width: 300;
+        float: right;
+    }
+
+    .buttons button {
+        width: 180px;
+        height: 46px;
+        margin-bottom: 20px;
+
+
+
+    }
+
+    .buttons .btnSingular {
+        width: 180px;
+        height: 46px;
+        margin-left: 100px;
+    }
+
+    .container {
+        width: 430px;
+        margin-bottom: 40px;
+    }
+
+    .container .container_right {
+        width: 230px;
+        margin-left: 190px;
+
+    }
+
+    .pessoas {
+        width: 300px;
+        margin-left: 10px;
+    }
+   
+    
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .buttons {
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 153px;
+        height: 46px;
+        margin-top: 0;
+    }
+
+    .buttons .btnSingular {
+        width: 153px;
+        height: 46px;
+        margin-left: 0;
+    }
+
+    .container {
+        width: 250px;
+    }
+
+    .container .container_right {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .container_right .total {
+        font-size: 16px;
+    }
+
+    .pessoas {
+        width: 250px;
+        margin-left: -50px;
+    }
+
+    .container_head{
+        font-size: 25px;
+        font-weight: bold;
+        width: 100px;
+        margin-left: 50px;
+        
+        
+    }
+    
+ 
+    
+    .container_head .passagem .line{
+        width: 82px;
+        height: 5px;
+        background-color: var(--paletaNum1);
+        position: absolute;
+        z-index: -1;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+
+}
+

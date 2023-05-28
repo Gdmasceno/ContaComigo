@@ -1,0 +1,355 @@
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+}
+
+.container{
+    background-color: white;
+    border-radius: 16px;
+    width: 720px;
+    /* padding: 70px 0px 50px 0px; */
+    padding: 70px 80px 50px 80px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container .containerHead{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerHead .containerHead_left{
+    display: flex;
+}
+
+.person .circle{
+    background-color: var(--paletaNum2);
+    border-radius: 100%;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person .circle img{
+    width: 27px;
+    height: 27px;
+}
+
+.nome{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.editar img{
+    margin-left: 20px;
+}
+
+
+.containerHead .containerHead_right{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+ .wires{
+    display: flex;
+    width: 100%;
+    height: 48px;
+    justify-content: space-between;
+}
+
+ .wire{
+    margin-top: -20px;
+    background-color: var(--secundary-color);
+    width: 15px;
+    height: 42px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+}
+
+.valor{
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.add_cliente{
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.add_cliente img {
+    margin-top: 3px;
+    width: 13px;
+    height: 13px;
+}
+
+
+.selecionar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.selecionar p{
+    margin-top: 10px;
+}
+
+.selecionar select{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+    padding: 0px 20px;
+    margin-top: 15px;
+}
+
+.container_table{
+    width: 600px;
+    padding: 0px 30px;
+    height: 225px;
+    overflow: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* 
+table{
+    width: 400px;
+    margin-top: 40px;
+    overflow: auto;
+
+} */
+
+table tr{
+    /* background-color: cadetblue; */
+    /* height: 50px; */
+}
+
+/* table tr th{
+    text-align: left;
+}
+
+table input{
+    font-size: 18px;
+    border: none;
+    padding: 5px 10px;
+} */
+
+.ipt_enable{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+table tr td{
+    font-size: 18px;
+}
+
+.dados{
+    border-bottom: 3px solid black;
+}
+
+table tr .id{
+    color: var(--paletaNum3);
+    border-bottom: 5px solid var(--paletaNum3);
+    width: 10%;
+}
+
+table tr .nomeItem{
+    color: var(--paletaNum2);
+    border-bottom: 5px solid var(--paletaNum2);
+    width: 20%;
+}
+
+table tr .preco{
+    color: var(--paletaNum1);
+    border-bottom: 5px solid var(--paletaNum1);
+    width: 10%;
+}
+
+table tr .espaco{
+    width: 8%;
+}
+
+table tr .editarApagar{
+    width: 10%;
+    cursor: pointer;
+}
+
+table tr .deletar{
+    width: 3%;
+}
+
+table img{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.msg{
+    font-size: 20px;
+    color: #888888;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cadastrarItem{
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    background-color: rgb(0, 0, 0,60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrarItem .popup{
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.popup .header_popup{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.popup .header_popup .line{
+    width: 9px;
+    height: 69px;
+    background-color: var(--secundary-color);
+    border-radius: 20px;
+}
+
+.popup .header_popup .titulo{
+    width: 310px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.search{
+    height: 46px;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.search input{
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.search img{
+    width: 26px;
+    height: 26px;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.btns button{
+    width: 48%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btns .cancelar{
+    border: 2px solid var(--secundary-color);
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.btns .adicionar{
+    background-color: var(--secundary-color);
+    color: white;
+    border-radius: 10px;
+}
+
+.resultado{
+    width: 300px;
+    background-color: white;
+    margin-top: 8px;
+    padding: 10px;
+    max-height: 76px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        /* background-color: red; */
+        width: 400px;
+    }
+
+    .container_table{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        width: 230px;
+    }
+
+    .container_table{
+        width: 400px;
+    }
+
+    .container .containerHead{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerHead .containerHead_right{
+        margin-top: 20px;
+    }
+
+    .valor{
+        margin-right: 10px;
+    }
+
+    .container_table{
+        width: 300px;
+    }
+
+    .container_table table{
+        width: 350px;
+    }
+}

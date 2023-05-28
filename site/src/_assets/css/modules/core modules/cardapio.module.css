@@ -1,0 +1,405 @@
+.fBody{
+    display: flex;
+}
+
+.msg{
+    font-size: 20px;
+    color: #888888;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valor{
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.add_cliente{
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.add_cliente img {
+    margin-top: 3px;
+    width: 13px;
+    height: 13px;
+}
+
+.container{
+    background-color: white;
+    border-radius: 16px;
+    width: 900px;
+    height: 460px;
+    padding: 40px 60px;
+    margin-top: 50px;
+}
+
+.containerHead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerHead .titulo{
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.containerHead .cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.main{
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.filtro{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.filtro .radioGroup{
+    width: 300px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radioGroup input{
+    width: 20px;
+    height: 20px;
+    background-color: var(--paletaNum1);
+}
+
+.tabela{
+    margin-top: 20px;
+    height: 330px;
+    overflow: auto;
+}
+
+
+table{
+    width: 100%;
+    margin-top: 40px;
+}
+
+table tr{
+    /* background-color: cadetblue; */
+    height: 50px;
+}
+
+table tr th{
+    text-align: left;
+}
+
+table input{
+    font-size: 18px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.ipt_enable{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+table tr td{
+    font-size: 18px;
+}
+
+.dados{
+    border-bottom: 3px solid black;
+}
+
+table tr .id{
+    color: var(--paletaNum3);
+    border-bottom: 5px solid var(--paletaNum3);
+    width: 5%;
+}
+
+table tr .nome{
+    color: var(--paletaNum2);
+    border-bottom: 5px solid var(--paletaNum2);
+    width: 40%;
+}
+
+table tr .preco{
+    color: var(--paletaNum1);
+    border-bottom: 5px solid var(--paletaNum1);
+    width: 20%;
+}
+
+table tr .espaco{
+    width: 5%;
+}
+
+table tr .editarApagar{
+    width: 10%;
+    cursor: pointer;
+}
+
+.apagarEditar{
+    color: #888888;
+}
+
+.dados{
+    height: 60px;
+}
+
+.cadastrarItem{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastrarItem .popup{
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.popup .header_popup{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.popup .header_popup .line{
+    width: 9px;
+    height: 69px;
+    background-color: var(--paletaNum2);
+    border-radius: 20px;
+}
+
+.popup .header_popup .titulo{
+    width: 310px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup .inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup .inputs input{
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 0px 20px;
+}
+
+select{
+    width: 150px;
+    height: 45px;
+    padding: 0px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+}
+
+.popup button{
+    width: 340px;
+    height: 45px;
+    background-color: var(--secundary-color);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.precos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.precos input{
+    width: 100px;
+    margin-left: 3px;
+    padding: 10;
+}
+
+.passagem .line{
+    width: 82px;
+    height: 5px;
+    background-color: var(--paletaNum1);
+    position: absolute;
+    z-index: -1;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.containerHead .titulo .line{
+    width: 82px;
+    height: 5px;
+    background-color: var(--paletaNum1);
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+
+@media screen and (max-width: 1150px){
+    .container{
+        margin-top: 130px;
+    }
+
+    .id{
+        display: none;
+    }
+
+    .idItem{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 1050px){
+    .container{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 400px;
+    }
+
+    .popup .header_popup{
+        width: 300px;
+    }
+
+    .popup .header_popup .titulo{
+        margin-left: 20px;
+    }
+
+
+    .containerHead .titulo{
+        font-size: 23px;
+    }
+
+    .valor{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    .filtro{
+        font-size: 16px;
+    }
+
+    .radioGroup input{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    .container{
+        width: 230px;
+    }
+
+    .popup .header_popup{
+        width: 200px;
+    }
+
+
+    .containerHead .titulo{
+        font-size: 20px;
+    }
+
+    .valor{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .filtro{
+        font-size: 16px;
+    }
+
+    .radioGroup input{
+        width: 15px;
+        height: 15px;
+    }
+
+    .containerHead .titulo .line{
+        width: 50px;
+    }
+
+    .containerHead .cadastrar{
+        justify-content: left;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .containerHead{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cadastrarItem .popup{
+        margin-top: 50px;
+        width: 200px;
+        height: 380px;
+    }
+
+
+    .popup .header_popup{
+        justify-content:left;
+    }
+    
+    .popup .header_popup .line{
+        height: 55px;
+    }
+    
+    .popup .header_popup .titulo{
+        width: 210px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .popup .inputs input{
+        width: 155px;
+    }
+    
+    .popup button{
+        width: 200px;
+    }
+    
+}

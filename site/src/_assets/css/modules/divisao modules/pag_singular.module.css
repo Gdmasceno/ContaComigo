@@ -1,0 +1,286 @@
+.main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    float: right;
+}
+
+.main .main_head{
+    font-size: 16px;
+    color: #888888;
+    font-weight: bold;
+    width: 100%;
+}
+
+.main_head p{
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #888888;
+}
+
+
+.container{
+    background-color: white;
+    border-radius: 16px;
+    width: 720px;
+    padding: 70px 80px 50px 80px;
+    margin-top: 20px;
+    height: 400px;
+    z-index: 0;
+}
+
+.container_head{
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+    
+}
+
+.container_head .desc{
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 5px;
+    z-index:auto;
+}
+
+.container_head .passagem .line{
+    width: 235px;
+    height: 5px;
+    background-color: var(--paletaNum1);
+    position: absolute;
+    z-index: -1;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.buttons{
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button{
+    border: none;
+    font-size: 16px;
+    width: 140px;
+    height: 45px;
+    font-weight: bold;
+}
+
+.buttons .button_one{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    z-index: 0;
+    cursor: pointer;
+    border: 2px solid var(--secundary-color);
+    margin-right: 20px;
+}
+
+
+.buttons .button_two{
+    color: white;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+    margin-top: 30px;
+    z-index: 0;
+    cursor: pointer;
+
+}
+.container .container_right{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 500px;
+}
+
+.container_right .total{
+    color: var(--paletaNum1);
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.container_right .valor{
+    color: var(--secundary-color);
+}
+
+.select{
+    width: 220px;
+}
+.select select{
+    width: 220px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color:#F2F2F2;
+    color: var(--secundary-color);
+    font-size: 16px;
+}
+
+.center{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+}
+.center p{
+    font-weight: bold;
+    font-size:22px;
+    
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .main {
+        margin-top: 10px;
+    }
+
+    .container {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .buttons {
+        width: 300;
+        float: right;
+        margin-top: 50px;
+    }
+
+    .buttons button {
+        width: 150px;
+        height: 46px;
+
+    }
+
+    .buttons .btnSingular {
+        width: 150px;
+        height: 46px;
+        margin-left: 100px;
+    }
+
+    .container {
+        width: 400px;
+
+    }
+    
+        
+
+    .container .container_right {
+        margin-top: 30px;
+        width: 240px;
+        margin-left: 120px;
+    }
+
+    .container_right .total {
+        font-size: 20px;
+
+    }
+
+    
+.container_head{
+    font-size: 25px;
+    font-weight: bold;
+    width: 300px;
+    margin-left: 87px;
+    
+}
+
+.container_head .desc{
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 5px;
+    z-index:auto;
+}
+
+.container_head .passagem .line{
+    width: 235px;
+    height: 5px;
+    background-color: var(--paletaNum1);
+    position: absolute;
+    z-index: -1;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .buttons {
+        width: 150;
+        float: right;
+        margin-top: 0px;
+
+
+
+    }
+
+    .buttons button {
+        width: 153px;
+        height: 46px;
+
+
+    }
+
+
+    .container {
+        width: 200px;
+        height: 340px;
+        margin-bottom: 50px;
+
+    }
+
+    .container .container_right {
+        margin-top: 30px;
+        width: 240px;
+        margin-left: 30px;
+    }
+
+    .container_right .total {
+        font-size: 16px;
+
+    }
+
+    
+    .container_head{
+        font-size: 25px;
+        font-weight: bold;
+        width: 300px;
+        margin-left: -20px;
+        
+    }
+    
+    .container_head .desc{
+        font-size: 22px;
+        font-weight: normal;
+        margin-top: 5px;
+        z-index:auto;
+    }
+    
+    .container_head .passagem .line{
+        width: 235px;
+        height: 5px;
+        background-color: var(--paletaNum1);
+        position: absolute;
+        z-index: -1;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+    
+
+}
+ 
+
+ 

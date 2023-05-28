@@ -1,0 +1,524 @@
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    border-radius: 16px;
+    width: 800px;
+    height: 550px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -30px;
+}
+
+.container .up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .up .card {
+    background-color: white;
+    width: 42%;
+    height: 170px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.container .mid .card {
+    background-color: white;
+    width: 95%;
+    height: 170px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.container .bot {
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.container .bot .card {
+
+    margin-left: 40px;
+    display: flex;
+    align-content: flex-start;
+    /* padding: 0px 20px;  */
+    flex-direction: column;
+
+}
+
+.container .bot .card p {
+    font-size: 16px;
+    text-align: left;
+    color: gray;
+}
+
+
+.card .card_main {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    height: 120px;
+}
+
+.btn img {
+    width: 30px;
+}
+
+.card .card_main .card_header .card_titulo {
+    font-size: 20px;
+    font-weight: bold;
+    width: 230px;
+}
+
+.card .card_main .card_dados {
+    width: 230px;
+    margin-top: 10px;
+}
+
+.card .card_main .card_dados p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.lineRed {
+    width: 7px;
+    height: 120px;
+    background-color: var(--paletaNum3);
+    border-radius: 10px;
+}
+
+.lineYellow {
+    width: 7px;
+    height: 120px;
+    background-color: var(--paletaNum2);
+    border-radius: 10px;
+}
+
+.lineGreen {
+    width: 7px;
+    height: 120px;
+    background-color: var(--paletaNum1);
+    border-radius: 10px;
+    margin-left: 20px;
+
+}
+
+.lineBlack {
+    width: 7px;
+    height: 120px;
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+}
+
+.leftSide {
+    width: 200px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+.leftSide .titulo {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.leftSide p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.cadeado {
+    margin-left: 70px;
+}
+
+.rightSide {
+    display: flex;
+    width: 300px;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 100px;
+    display: flex;
+
+}
+
+.rightSide .add_func {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+
+}
+
+.rightSide .valor {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 90px;
+    color: var(--secundary-color);
+}
+
+.rightSide .add_cliente {
+    margin-right: 40px;
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+    margin-top: 2px;
+    cursor: pointer;
+
+}
+
+.rightSide img {
+    margin-top: 3px;
+    width: 13px;
+    height: 13px;
+}
+
+.rightSide .listar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 16px;
+    margin-left: 23px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.rightSide .listar img {
+    margin-top: 6px;
+}
+
+.card .card_titulo {
+    font-weight: bold;
+    font-size: 22px;
+    width: 250px;
+
+}
+
+.card p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.select {
+    margin-top: 17px;
+    width: 500px;
+    height: 34px;
+    display: flex;
+    color: var(--paletaNum1);
+}
+
+
+.select input {
+    width: 15px;
+    height: 15px;
+    color: var(--paletaNum1);
+}
+
+.select span {
+    padding: 20px;
+}
+
+.chave {
+    margin-left: 230px;
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+.add_pix {
+    width: 25px;
+    height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: var(--secundary-color);
+    border-radius: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.add_pix img {
+    margin-top: 3px;
+    width: 13px;
+    height: 13px;
+}
+
+.containerHead {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.containerHead .titulo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.containerHead .cadastrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+.card_editar .popup {
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.popup .header_popup {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 40px;
+}
+
+.popup .header_popup .line {
+    width: 9px;
+    height: 69px;
+    background-color: var(--paletaNum2);
+    border-radius: 20px;
+}
+
+.popup .header_popup .titulo {
+    width: 310px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.popup .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup .inputs input {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 0px 20px;
+}
+
+select {
+    width: 150px;
+    height: 45px;
+    padding: 0px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none;
+}
+
+.popup button {
+    width: 340px;
+    height: 45px;
+    background-color: var(--secundary-color);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .container {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card .card_main .card_header .card_titulo {
+        font-size: 16px;
+    }
+
+    .container {
+        justify-content: center;
+        margin-top: 110px;
+        height: 800px;
+        
+    }
+
+
+    .container .up {
+        flex-direction: column;
+        align-items: center;
+   
+    }
+
+    .container .up .card {
+        margin-top: 20px;
+    }
+
+    .container .mid .card {
+        width: 42%;
+        margin-top: 20px;
+    }
+
+    .container .mid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+
+    }
+    .container .mid p{
+       flex-direction: row;
+
+        width: 150px;
+    }
+
+
+
+    .rightSide .valor {
+        display: none;
+    }
+
+    .rightSide .listar {
+        display: none;
+    }
+
+
+    .rightSide {
+        width: 100px;
+        margin-left: 30px;
+    }
+
+    .leftSide {
+        margin-left: 20px;
+    }
+
+    .cadeado {
+        margin-left: 30px;
+    }
+
+    .leftSide .titulo {
+        font-size: 18px;
+    }
+
+    .leftSide p {
+        font-size: 16px;
+    }
+
+    .select {
+        flex-direction: column;
+    }
+
+    .grupo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .bot {
+        background-color: white;
+        width: 47%;
+        height: 169px;
+        justify-content: center;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        margin-left: 215px;
+        margin-top: 20px;
+    }
+
+    .container .bot .card {
+        width: 50%;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: row;
+       
+
+
+    }
+    .container .bot .card .card_titulo{
+        font-size: 19px;
+    }
+
+    .container .bot .card p {
+        display: none;
+    }
+
+    .chave {
+        margin-left: -245px;
+        margin-right: 30px;
+        font-size: 16px;
+        margin-top: 50px;
+        width: 150px;
+        
+    }
+
+    .add_pix {
+        width: 25px;
+        height: 25px;
+        font-size: 13px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        background-color: var(--secundary-color);
+        border-radius: 15px;
+        margin-top: 40px;
+        cursor: pointer;
+        margin-left: 40px;
+   
+    }
+
+    .add_pix img {
+        margin-top: 3px;
+        width: 13px;
+        height: 13px;
+    }
+
+    .lineGreen {
+        margin-top: 10PX;
+        width: 7px;
+        height: 120px;
+        background-color: var(--paletaNum1);
+        border-radius: 10px;
+        margin-left: -110px;
+
+    }
+    .lineBlack {
+        width: 20px;
+        height: 120px;
+        background-color: var(--secundary-color);
+        border-radius: 10px;
+    }
+
+}
+

@@ -1,0 +1,330 @@
+.bodyF{
+    display: flex;
+    height: 100vh;
+}
+
+.listaPaginas{
+    background-color: white;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    animation: go-back 0.5s alternate;
+    z-index: -1;
+}
+
+.listaPaginas p{
+    color: #616060;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+
+
+.lines{
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.lines .line{
+    width: 90%;
+    height: 5px;
+    background-color: var(--secundary-color);
+    margin-top: 5px;
+    border-radius: 40px;
+}
+
+.menu_lateral{
+    width: 200px;
+    background-color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.head img{
+    width: 150px;
+}
+
+.fechar img{
+    height: 30px;
+    width: 30px;
+}
+
+.menus{
+    margin-top: 60px;
+}
+
+.menus .menu{
+    display: flex;
+    cursor: pointer;
+}
+
+.menu .line{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu .line .verticalAtv{
+    height: 40px;
+    width: 5px;
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.menu .icon{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .icon img{
+    width: 20px;
+}
+
+.menu .info , .infoAtv{
+    width: 40%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    color: #616060;
+}
+
+.menu .infoAtv{
+    color: var(--secundary-color);
+    font-weight: bold;
+}
+
+.suporte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.suporte .box .sup_head{
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.sup_head .titulo{
+    width: 100px;
+    color: white;
+}
+
+.box .sup_main{
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.sup_icon{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.suporte .sup_head .sup_icon img{
+    width: 22px;
+}
+
+.suporte .box{
+    width: 148px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    border-radius: 13px;
+}
+
+.box .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box button{
+    width: 119px;
+    height: 37px;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgb(0, 0, 0, 25%);
+    cursor: pointer;
+}
+
+.sair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.sairDois{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sair .sair_txt{
+    color: #616060;
+    margin-left: 10px;
+}
+
+.sair img{
+    width: 18px;
+    margin-left: -10px;
+}
+
+.sairDois .sair_txt{
+    color: #616060;
+    margin-left: 10px;
+}
+
+.sairDois img{
+    width: 18px;
+    margin-left: -10px;
+}
+
+.logomarca{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.logomarca .line{
+    height: 6px;
+    width: 100%;
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+
+    .bodyF{
+        position: fixed;
+        z-index: 2;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu_lateral .head img{
+        margin-left: 30px;
+    }
+
+
+
+    .logomarca {
+        display: flex;
+    }
+
+    .bodyF{
+        height: 100px;
+    }
+
+    .menu_lateral{
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menus{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .suporte{
+        display: none;
+    }
+    
+    .menu .line{
+        display: none;
+    }
+
+    .sair{
+        margin: 0;
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .lines{
+        display: block;
+    }
+    .menu_lateral{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98.5vw;
+    }
+
+    .menu_lateral .head{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sair{
+        display: none;
+    }
+
+    .menus{
+        display: none;
+    }
+
+    .sairDois{
+        display: flex;
+        margin-right: 30px;
+    }
+}
+
+
+@keyframes go-back {
+    from {
+      transform: translateY(-100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
