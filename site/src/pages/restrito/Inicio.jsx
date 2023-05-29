@@ -12,11 +12,26 @@ import cuidado from "../../_assets/img/icons/warning.png"
 function Inicio() {
     const navigate = useNavigate();
     const [qtdPedidos, setQtdPedidos] = useState();
-    const [chaveCadastrada, setChaveCadastrada] = useState()
+    const [chaveCadastrada, setChaveCadastrada] = useState(true)
+    const [pagamentos, setPagamentos] = useState()
 
     function irPedidos(){
         sessionStorage.pagina = "pedidos";
         navigate("/pedidos");
+    }
+
+    function getPagamantos(){
+        api.get("/pagamentos/todos/" + sessionStorage.userId)
+        .then((response) => {
+            console.log(response)
+            setPagamentos(response.data)
+        }).catch((err) => {
+            if (err.response.status === 404) {
+                console.log("Este endpoint não existe")
+            } else {
+                console.error(err)
+            }
+        })
     }
 
     function contarPedidos(){
@@ -36,11 +51,12 @@ function Inicio() {
     function getChaveCadastrada(){
         api.get("/detalhes-pagamento/" + sessionStorage.userId)
         .then((response) => {
-            console.log("qtd: "+ response.data)
+            console.log("chave: "+ response.data)
             setChaveCadastrada(response.data)
         }).catch((err) => {
             if (err.response.status === 404) {
                 console.log("Este endpoint não existe")
+                setChaveCadastrada(false)
             } else {
                 console.error(err)
             }
@@ -50,6 +66,7 @@ function Inicio() {
     useEffect(() => {
         contarPedidos()
         getChaveCadastrada()
+        getPagamantos()
       }, []);
 
     if(sessionStorage.length > 0){
@@ -73,8 +90,15 @@ function Inicio() {
                     <div className={chaveCadastrada? styles.container_main : "btn_d"}>
                         <div className={styles.titulo}>Últimos pagamentos recebidos</div>
                         <div className={styles.pagamentos}>
-                        <ListaPagamentos/>
-                        <ListaPagamentos/>
+                            {
+                                pagamentos ? (
+                                    pagamentos.map((pagamento) => {
+                                            return (
+                                                <ListaPagamentos pagamento={pagamento}/>
+                                            )
+                                    })
+                                ) : <div className={styles.msg}>Não há pagamentos</div>
+                            }
                         </div>
                     </div>
 

@@ -66,7 +66,7 @@ function Pagamento(props) {
 
   useEffect(() => {
     gerarQRcode();
-  });
+  }, []);
 
   if (sessionStorage.length > 0) {
     return (
@@ -128,6 +128,19 @@ function Pagamento(props) {
                     })
                       .then((response) => {
                         console.log("RESPONSE: ", response)
+                        api.post("/pagamentos/criar", {
+                          idRestaurante: sessionStorage.userId,
+                          numeroMesa: 2,
+                          nomePagante: state.nome,
+                          chavePix: "",
+                          valorPagamento: state.valor.toFixed(2),
+                          pagamentoConcluido: true,
+                          pix: true
+                        }).then((response)=>{
+                          console.log("RESPONSE: ", response)
+                        }).catch((err)=>{
+                          console.log(err)
+                        })
 
                         // getPedidos();
 
@@ -166,7 +179,7 @@ function Pagamento(props) {
                   icon: 'success',
                   title: 'Pagamento registrado'
                 })
-              }}>Pagamento concluído</div>
+              }}>Confirmar pagamento</div>
 
               {/* <span class="loader"></span>  */}
             </div>
