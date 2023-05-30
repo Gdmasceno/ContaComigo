@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'ContaComigo'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_38761B2D1BB94A11BC418EFE67C8C6DD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_73615A5C9FE04E069AF6C85553E2BE25 }}
           package: .
